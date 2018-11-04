@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hariprasad.thelocalherald.AddNewsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/etHeading_AN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter the Title"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etDescription_AN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.21"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etDate_AN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Date in the form YYYY-MM-DD"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etPincode_AN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Pincode"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etLocality_AN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint=" Place Name"
+            android:inputType="textPersonName" />
+
+        <!--<Button
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD IMAGE" /> -->
+
+        <Button
+            android:id="@+id/btPublish_AN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PUBLISH"
+            android:onClick="AddNews"/>
+
+        <!--<ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.71"
+            app:srcCompat="@mipmap/ic_launcher" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>
